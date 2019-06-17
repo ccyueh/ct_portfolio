@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Header has an image so maximum width is set to header image width*/
+html {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Palantino;
+  padding: 10px;
+  background: #dff8eb;
+}
+
+/* Header/Blog Title */
+.header {
+  height: 300px;
+  padding: 90px;
+  text-align: center;
+  background-image: url("https://i.imgur.com/ZC01XXV.jpg");
+  background-size: cover;
+}
+
+.header h1 {
+  font-size: 50px;
+  opacity: 0.75;
+  color: #fff;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #011638;
+}
+
+/* Navigation links are evenly spaced */
+.topnav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  width: 25%;
+  text-transform: uppercase;
+}
+
+/* Color matches background on hover */
+.topnav a:hover {
+  background-color: #dff8eb;
+  color: #364156;
+}
+
+a, h5 {
+  color: #cdcdcd;
+  text-decoration: none;
+}
+
+h2, h3 {
+  color: #364156;
+}
+
+.button-link {
+  background-color: #214e34;
+  padding: 16px;
+  text-align: center;
+  display: inline-block;
+  border: double #cdcdcd;
+  color: #fff;
+}
+
+.button-link:hover {
+  opacity: 0.75;
+}
+
+/* Style subscription form */
+label {
+  font-size: 0.8em;
+}
+
+input[type="email"] {
+  font-family: Palantino;
+  text-transform: capitalize;
+}
+
+/* Create two unequal columns that float next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Scale article images to match cards */
+.card img {
+  max-width: 100%;
+}
+
+/* Style Instagram icon with gradient */
+[class*="instagram"] {
+  color: #fff; 
+  background: linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+  width: 1.02em; 
+  border-radius: 6px; 
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout for tablets - stack columns */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout for phones - stack navigation links */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
