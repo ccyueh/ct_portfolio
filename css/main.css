@@ -75,6 +75,10 @@ h2, h3 {
   opacity: 0.75;
 }
 
+.float-right {
+  float: right;
+}
+
 /* Style subscription form */
 label {
   font-size: 0.8em;
@@ -111,13 +115,41 @@ input[type="email"] {
   max-width: 100%;
 }
 
+#profile-img {
+  width: 200px; 
+  max-width: 100%; 
+  border-radius: 10em;
+}
+
+/* Style social media icons */
+.social-icon {
+  font-size: 2em;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-facebook-f {
+  color: #3b5998;
+}
+
 /* Style Instagram icon with gradient */
-[class*="instagram"] {
+.fa-instagram {
   color: #fff; 
   background: linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
   width: 1.02em; 
   border-radius: 6px; 
   text-align: center;
+}
+
+#input-subscribe {
+  width: 100%;
+}
+
+#btn-subscribe {
+  font-family: Palantino;
+  font-size: 1em;
 }
 
 /* Clear floats after the columns */
